@@ -1,0 +1,15 @@
+{
+    "name": "blood-bowl-fvtt",
+    "title": "Blood Bowl",
+    "description": "Simple implementation of Games Workshop's Blood Bowl 2020",
+    "version": "0.1.0",
+    "templateVersion": 2,
+    "author": "Nullh",
+    "socket": false,
+    "initiative": "1d6",
+    "gridDistance": 1,
+    "gridUnits": "squares",
+    "url": "https://github.com/Nullh/blood-bowl-fvtt",
+    "manifest": "https://raw.githubusercontent.com/Nullh/blood-bowl-fvtt/main/system.json",
+    "download": "https://your/packaged/download/archive.zip"
+  }

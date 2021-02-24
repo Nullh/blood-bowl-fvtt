@@ -1,0 +1,48 @@
+{
+    "Actor": {
+      "types": ["player"],
+      "templates": {
+        "stats": {
+          "MA": {
+            "min": 1,
+            "value": 5,
+            "max": 9
+          },
+          "ST": {
+            "min": 1,
+            "value": 3,
+            "max": 8
+          },
+          "AG": {
+            "min": 1,
+            "value": 4,
+            "max": 6
+          },
+          "PA": {
+            "min": 1,
+            "value": 5,
+            "max": 6
+          },
+          "AV": {
+            "min": 3,
+            "value": 8,
+            "max": 11
+          }
+        }
+      },
+      "player": {
+        "templates": ["stats"]
+      }
+    },
+    "Item": {
+      "types": ["ball"],
+      "templates": {
+        "type": {
+          "description": "Standard ball"
+        }
+      },
+      "ball": {
+        "templates": ["type"]
+      }
+    }
+    }
