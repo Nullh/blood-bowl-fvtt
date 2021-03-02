@@ -25,5 +25,5 @@
     "gridDistance": 1,
     "gridUnits": "squares",
     "primaryTokenAttribute": "move",
-    "initiative": "id6"
+    "initiative": "1d6"
 }
