@@ -26,13 +26,6 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Zip Release
-        # You may pin to the exact commit or the version.
-        # uses: TheDoctor0/zip-release@a1afcab9c664c9976ac398fa831eac67bed1eb0e
-        uses: TheDoctor0/zip-release@0.4.1
-        with:
-          # Filename for archive
-          filename: blood-bowl-fvtt.zip# default is release.zip
       - name: Release Creator
         # You may pin to the exact commit or the version.
         # uses: alice-biometrics/release-creator@776aae43916758e40fc9420eb85f5659994f4a3e
@@ -52,7 +45,18 @@ jobs:
           draft: false# optional, default is false
           # Define if new release is a prerelease or not
           prerelease: flase # optional, default is false
-          
+      - name: Zip Release
+        # You may pin to the exact commit or the version.
+        # uses: TheDoctor0/zip-release@a1afcab9c664c9976ac398fa831eac67bed1eb0e
+        uses: TheDoctor0/zip-release@0.4.1
+        with:
+          # Filename for archive
+          filename: blood-bowl-fvtt.zip
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+            artifacts: "blood-bowl-fvtt.zip"
+            token: ${{ secrets.GITHUB_TOKEN }}
           
           
           
