@@ -32,7 +32,7 @@ jobs:
         uses: alice-biometrics/release-creator@v1.0.4
         with:
           # GitHub token
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # New release version
           version: inherit
           # New release description
