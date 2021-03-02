@@ -24,3 +24,13 @@ jobs:
           body: It's a new release!
           draft: false
           prerelease: false
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: 'blood-bowl-fvtt.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+            artifacts: 'blood-bowl-fvtt.zip'
+            token: ${{ secrets.GITHUB_TOKEN }}
