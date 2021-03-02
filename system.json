@@ -3,7 +3,7 @@
     "title": "Blood Bowl",
     "description": "A system for playing Games Workshop's Blood Bowl 2020 in Foundry VTT. A copy of the Blood Bowl 2020 rules is required in order to use this system.",
     "author": "Nullh",
-    "version": "0.1.5",
+    "version": "0.2.0",
     "minimumCoreVersion": "0.7.9",
     "compatibleCoreVersion": "0.7.9",
     "esmodules": [
@@ -28,5 +28,5 @@
     "initiative": "1d6",
     "url": "https://github.com/Nullh/blood-bowl-fvtt",
     "manifest": "https://raw.githubusercontent.com/Nullh/blood-bowl-fvtt/main/system.json",
-    "download": "https://github.com/Nullh/blood-bowl-fvtt/releases/latest/blood-bowl-fvtt.zip"
+    "download": "https://github.com/Nullh/blood-bowl-fvtt/releases/latest/download/blood-bowl-fvtt.zip"
 }
