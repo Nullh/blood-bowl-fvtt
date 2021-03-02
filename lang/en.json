@@ -1,0 +1,11 @@
+{
+    "bb": {
+        "ballType": {
+            "standard": "Standard Ball"
+        },
+        "skill": {
+            "default": "Default skill",
+            "compulsory": "Compulsory"
+        }
+    }
+}

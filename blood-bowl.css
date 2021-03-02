@@ -1,0 +1,56 @@
+.sheet form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sheet .sheet-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sheet .sheet-content .editor {
+    height: 100%
+}
+
+.sheet .player-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+}
+
+.sheet .player-name {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.sheet .player-portrait {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.sheet .skill-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.4em;
+}
+
+.sheet .skill-name .compulsory-text {
+    font-size: 0.5em;
+    color: #8B0000;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.sheet .collapsible-content {
+    padding: 0 18px;
+    overflow: hidden;
+    max-height: 0;
+    background-color: #f1f1f1;
+    transition: max-height 0.2s ease-out;
+}

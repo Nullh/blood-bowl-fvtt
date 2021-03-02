@@ -1,0 +1,19 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <div class="sheet-content">
+        <table>
+            <tr>
+                <td>Category</td>
+                <td>Compulsory</td>
+            </tr>
+            <tr>
+                <td><input name="data.category" type="text" value="{{data.category}}" placeholder="Fart"/></td>
+                <td><input type="checkbox" name="data.compulsory" {{checked data.compulsory}}/></td>
+            </tr>
+        </table>
+        <!--<textarea name="data.effect">{{data.effect}}</textarea>-->
+        {{editor content=data.effect target="data.effect" button=true owner=owner editable=editable}}
+    </div>
+</form>

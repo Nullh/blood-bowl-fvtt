@@ -1,0 +1,69 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <div class="player-portrait">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+        <div class="player-name">
+            <h1 class="playerName">
+                <div data-edit="name" contenteditable>
+                    {{actor.name}}
+                </div>
+            </h1>
+            <h2 class="playerPosition">
+                <div data-edit="data.position" contenteditable>
+                    {{data.position}}
+                </div>
+            </h2>
+
+            <div class="player-stats">
+            <!--</div>
+            <div class="resource-content flexrow flex-center flex-between">-->
+                <table>
+                    <tr>
+                        <th>MA</th>
+                        <th>ST</th>
+                        <th>AG</th>
+                        <th>PA</th>
+                        <th>AV</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="data.MA.value" value="{{data.MA.value}}" data-dtype="Number" /></td>
+                        <td><input type="text" name="data.ST.value" value="{{data.ST.value}}" data-dtype="Number" /></td>
+                        <td><input type="text" name="data.AG.value" value="{{data.AG.value}}" /></td>
+                        <td><input type="text" name="data.PA.value" value="{{data.PA.value}}" /></td>
+                        <td><input type="text" name="data.AV.value" value="{{data.AV.value}}" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <section class="skillBox">
+        <h2>
+            Skills
+            <!--
+                THIS DOESN'T WORK
+            <a class="item-create" title="Add Skill" data-type="skill"><i class="fas fa-plus"></i></a>
+            <select name="add-skill">
+                {{#select skills}}
+                {{#each skills as |skill id|}}
+                <option value="{{id}}">{{skill.name}}</option>
+                {{/each}}
+                {{/select}}
+            </select>
+            -->
+        </h2>
+        {{#each skills as |skill id|}}
+            <div class="skill-item item" data-item-id="{{skill._id}}">
+                <div class="skill-name">
+                    <span>{{skill.name}} {{#if skill.data.compulsory}}<span class="compulsory-text">Compulsory</span>{{/if}}</span>
+                    <span>
+                        <a class="skill-collapsible"><i class="fas fa-chevron-down"></i></a>
+                        <a class="item-delete"><i class="fas fa-trash"></i></a>
+                    </span>
+                </div>
+                <div class="category"><b>{{skill.data.category}}</b></div>
+                <div class="collapsible-content">{{{skill.data.effect}}}</div>
+                <hr />
+            </div>
+        {{/each}}
+        
+    </section>
+</form>
