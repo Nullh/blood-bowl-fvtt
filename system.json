@@ -3,7 +3,7 @@
     "title": "Blood Bowl",
     "description": "A system for playing Games Workshop's Blood Bowl 2020 in Foundry VTT. A copy of the Blood Bowl 2020 rules is required in order to use this system.",
     "author": "Nullh",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "minimumCoreVersion": "0.7.9",
     "compatibleCoreVersion": "0.7.9",
     "esmodules": [
